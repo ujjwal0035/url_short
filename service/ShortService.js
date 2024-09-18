@@ -53,7 +53,6 @@ const getMappedUrl = async function(shortCode, ipData, userAgent) {
             };
     
             await UrlAnalytics.updateOne({ shortCode }, update, { upsert: true });
-    
             resolve(result);
         } catch (e) {
             reject(e);
